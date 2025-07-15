@@ -6,19 +6,19 @@ export default ({height, weight, imc, valuesTableDisplay}) => {
 
     return(
         <div className={`${valuesTableDisplay} flex justify-center items-center text-gray-50 mb-6`}>
-                <table className="table-auto border-collapse border border-gray-400">
+                <table className="table-auto border-collapse ">
                     <thead>
                         <tr>
-                            <th className="border border-gray-400 px-4 py-2">Altura</th>
-                            <th className="border border-gray-400 px-4 py-2">Peso</th>
-                            <th className="border border-gray-400 px-4 py-2">IMC</th>
+                            <th className=" px-4 py-2">Altura</th>
+                            <th className=" px-4 py-2">Peso</th>
+                            <th className=" px-4 py-2">IMC</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td className="border border-gray-400 px-4 py-2">{formattedHeight}</td>
-                            <td className="border border-gray-400 px-4 py-2">{formattedWeight}</td>
-                            <td className="border border-gray-400 px-4 py-2">{formattedImc}</td>
+                            <td className=" px-4 py-2">{formattedHeight}</td>
+                            <td className=" px-4 py-2">{formattedWeight}</td>
+                            <td className=" px-4 py-2">{formattedImc}</td>
                         </tr>
                     </tbody>
                 </table>

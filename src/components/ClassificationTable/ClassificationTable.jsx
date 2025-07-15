@@ -13,18 +13,18 @@ export default ({activeID}) => {
     return (
         <>
             <div className="flex justify-center items-center text-gray-50">
-                <table className="table-auto border-collapse border border-gray-400">
+                <table className="table-auto">
                     <thead>
                         <tr>
-                            <th className="border border-gray-400 px-4 py-2">IMC</th>
-                            <th className="border border-gray-400 px-4 py-2">Classificação</th>
+                            <th className="bg-[#201f1f] px-4 py-2">IMC</th>
+                            <th className="bg-[#201f1f] px-4 py-2">Classificação</th>
                         </tr>
                     </thead>
                     <tbody>
                         {classificationsData.map((item, index) => (
                             <tr key={index}>
-                                <td className={`border border-gray-400 ${item.id === activeID ? "bg-gray-700" : ""} px-4 py-2`}>{item.imc}</td>
-                                <td className={`border border-gray-400 ${item.id === activeID ? "bg-gray-700" : ""} px-4 py-2`}>{item.classification}</td>
+                                <td className={`bg-[#201f1f] ${item.id === activeID ? "bg-gray-700" : ""} px-4 py-2`}>{item.imc}</td>
+                                <td className={`bg-[#201f1f] ${item.id === activeID ? "bg-gray-700" : ""} px-4 py-2`}>{item.classification}</td>
                             </tr>
                         ))}
                     </tbody>
